@@ -1,0 +1,105 @@
+Build a 3D animated Analytics Dashboard page inside BATCAVE. It should feel like a futuristic mission-control readout inside the Batcave — cinematic, sleek, and immersive.
+
+Layout & Structure
+
+Collapsible Sidebar (left): Consistent with app-wide sidebar (Dashboard, Plan, Calendar, Settings, Customize).
+
+Main Analytics Grid (right):
+
+Header: “Mission Analytics” title with glowing underline animation.
+
+Sections:
+
+Weekly Performance (3D bar chart)
+
+Monthly Overview (radar/spider chart)
+
+Yearly Insights (circular time-distribution chart)
+
+XP & Streak Tracker (animated progress rings)
+
+Chart Requirements
+
+Use Recharts (or D3/Three.js if possible) for base chart rendering.
+
+Wrap with GSAP + Framer Motion for cinematic animations.
+
+1. Weekly Performance (3D Bar Chart)
+
+Bars rise upward with staggered GSAP animations.
+
+Each bar has glowing edges, subtle reflection, and hover tooltip.
+
+Axis labels slide in from sides.
+
+2. Monthly Overview (Radar/Spider Chart)
+
+Categories: Tasks, Goals, Focus, Consistency, XP.
+
+Spider web animates outward from center with easing.
+
+Data points pulse on load, lines glow faintly.
+
+3. Yearly Insights (Circular Time Chart)
+
+12 arcs (months) forming a glowing ring.
+
+As data loads, arcs grow outward with bounce easing.
+
+Hover → arc expands slightly, tooltip fades in.
+
+4. XP & Streak Tracker
+
+Circular rings that fill smoothly.
+
+GSAP draws rings with “strokeDasharray” animation.
+
+Streak counter → number rolls up with odometer effect.
+
+Animations (GSAP + Framer Motion)
+
+Page Load:
+
+Sidebar expands, Analytics grid cards stagger in.
+
+Charts:
+
+Bars: rise with bounce.
+
+Spider web: radial growth.
+
+Circular charts: draw-on animation.
+
+Hover Effects:
+
+Cards lift with depth shadow + neon glow.
+
+Micro-Interactions:
+
+Hover tooltips fade/scale.
+
+Buttons pulse gently on hover.
+
+Style Guide
+
+Theme: Default = “Dark Knight” (deep black, electric blue accents).
+
+Cards: Glassmorphism with glowing borders.
+
+Fonts: Orbitron (titles), Inter (body text).
+
+Icons: Lucide-react with neon glow filters.
+
+Interactivity
+
+Dropdown at top-right → switch between Weekly / Monthly / Yearly views.
+
+Toggle: Table Mode (renders same data in clean table).
+
+Export Button → stub (future: CSV/Excel/PDF).
+
+Backend / API Integration (Stubbed)
+
+Charts load placeholder mock data unless Supabase is connected.
+
+If Supabase connected → fetch real user task/goals data.

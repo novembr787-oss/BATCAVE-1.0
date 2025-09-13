@@ -1,0 +1,230 @@
+Objective:
+Build a modern, scalable web app called BATCAVE — a gamified student productivity planner with cinematic animations, immersive UI, and AI-powered planning.
+
+🔧 Architecture & Stack
+
+Frontend: React + Vite + TypeScript
+
+Styling: TailwindCSS + custom gradients
+
+Animations: GSAP + Framer Motion (cinema-level, After Effects style)
+
+Backend/Auth/Data: Supabase
+
+AI Assistant (ALFRED): Gemini 2.5 pro via backend proxy
+
+Deployment: Vercel or Netlify
+
+⚠️ Instruction:
+Do NOT generate real Supabase schemas or hardcode keys.
+Instead, generate a setup wizard that asks the user to paste their API keys:
+
+SUPABASE_URL
+
+SUPABASE_ANON_KEY
+
+GEMINI_API_KEY
+Store them in .env and import via env.ts.
+
+
+BATCAVE should feel like a cinematic, immersive productivity HQ, not a kiddie app. The animations should be cinema-grade, like After Effects but real-time in React using GSAP + Framer Motion. Fonts and themes should scream Batcave aura — dark, sleek, powerful.
+
+Here’s the breakdown, ready to use:
+
+🖥️ DASHBOARD 
+
+“Build the Dashboard as the command center of BATCAVE.
+
+Layout: collapsible sidebar (left) + main dashboard grid (right).
+
+Cards: Today’s Tasks, XP Progress, Upcoming Events, Weekly Goals.
+
+Animations:
+
+GSAP stagger fade/slide for cards on load.
+
+Framer Motion hover glow + parallax depth on cards.
+
+Radar-style subtle sweeping background behind cards.
+
+Style: glassmorphism + neon gradient edges. Feels like mission control.”
+
+📅 PLAN 
+“Build a Planning tab /plan.
+
+Views: Week 1-5, Month, Quarter, Year.
+
+Domain-aware forms (athletics, Islamic, academics, custom).
+
+Dynamic sub-options (e.g., Surah auto-name, exercise reps/sets, etc.).
+
+Drag & drop tasks onto timeline.
+
+Animations:
+
+Smooth GSAP transitions between views.
+
+Tasks pop in with scale + glow.
+
+Timeline slides with physics-like easing.”
+
+🤖 ALFRED 
+
+“Build ALFRED, the AI assistant panel.
+
+Collapsible panel from right, summon with hotkey (CTRL+Space).
+
+Chat UI with Markdown rendering, code blocks, task suggestion buttons.
+
+Voice input (optional).
+
+Animations:
+
+Panel slides in with GSAP elastic easing.
+
+Messages fade/scale like holograms.
+
+Branding: Alfred = sleek butler vibe, responses with subtle personality.
+
+Backend hook: proxy to Gemini.
+
+🎨 CUSTOMIZATION CONSOLE 
+
+“Build a Customization Console /customize.
+
+Options: Themes, Fonts, Gamification Style (Sapling vs Mountain).
+
+Live preview panel.
+
+Theme presets (see theme prompt).
+
+Animations:
+
+Console opens like a holographic dashboard.
+
+Preview elements morph live with GSAP.
+
+Store settings in Supabase for user persistence.”
+
+⚙️ SETTINGS 
+
+“Build Settings /settings.
+
+Profile management (name, avatar, email).
+
+Toggle gamification style: Sapling 🌱 OR Mountain 🏔️ (exclusive).
+
+Toggle accessibility (reduced motion, high contrast).
+
+Animations:
+
+GSAP switch toggles with smooth morph.
+
+Save success → checkmark pulse.”
+
+📆 CALENDAR 
+
+“Build Calendar /calendar.
+
+Views: Month, Week, Day.
+
+Drag and drop tasks/events.
+
+Smooth scroll between weeks/months.
+
+Animations:
+
+Events grow/shrink into position with GSAP.
+
+Page flip animation between months (subtle).
+
+Style: futuristic holo-calendar, glowing edges.”
+
+🎬 GSAP 
+
+“Integrate GSAP + Framer Motion at cinematic level (After Effects vibe).
+
+Dashboard cards: stagger fade/slide.
+
+XP bar: fluid fill with bounce-out ease.
+
+Sapling: GSAP timeline scaling + leaf sway.
+
+Mountain: marker climbs with bezier path animation.
+
+Radar background: GSAP infinite rotation + fading sweep.
+
+Charts: bars grow upward, 3D rotation reveals.
+
+Micro-interactions: hover pulses, button taps, card lift on hover.”
+
+🌱 vs 🏔 GAMIFICATION SELECTION 
+
+“Gamification should be exclusive. In Settings, user chooses Sapling Growth 🌱 or Mountain Climb 🏔.
+
+Only one renders on Dashboard at a time.
+
+Persist user choice in Supabase.
+
+Animate smooth transition when switching styles (fade out → fade in).”
+
+📂 SIDEBAR PROMPT
+
+“Build collapsible sidebar.
+
+Sections: Dashboard, Analytics, Plan, Calendar, Settings, Customize.
+
+Icons: Lucide/Phosphor icons.
+
+Collapsed = icons only, expanded = icons + labels.
+
+Animations:
+
+Sidebar expands/collapses with GSAP width morph.
+
+Active link glows + pulses softly.”
+
+🔠 FONT 
+
+“Make fonts selectable in Customization Console. Options:
+
+Cyberpunk: ‘Orbitron’, neon + futuristic.
+
+Black Ops: military tactical.
+
+Space Grotesk: minimal sci-fi.
+
+JetBrains Mono: tech/numbers.
+
+Inter: clean body text.
+Fonts applied globally via Tailwind plugin.”
+
+🎨 THEME 
+
+“Make selectable themes in BATCAVE.
+
+Dark Knight: deep blacks + electric blue edges.
+
+Neon Grid: magenta/cyan neon, retro-futuristic.
+
+Stealth Ops: matte black, red accents, tactical vibe.
+
+Aurora: flowing gradients (green/blue/purple).
+
+Minimal White: soft white + gray, clean mode.
+User can toggle theme → instantly applied with GSAP fade/morph.”
+
+🦇 THE BATCAVE VIBE
+
+Overall BATCAVE should feel like:
+
+Mission control + futuristic cave.
+
+Dark, minimal, glowing edges, cinematic transitions.
+
+Animations = buttery smooth, After Effects quality.
+
+Fonts + themes = mood-shifters.
+
+Every element = immersive, but still productivity-first.
+
