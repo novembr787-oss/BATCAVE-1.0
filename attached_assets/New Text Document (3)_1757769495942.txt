@@ -1,0 +1,120 @@
+Build a Planning Tab inside BATCAVE where users can structure short-term (weeks) and long-term (months, quarters, year) goals across different life domains. It should feel like a mission strategy board, animated, futuristic, and deeply immersive.
+
+Layout & Structure
+
+Dedicated Planning Page (/plan) accessible via Sidebar.
+
+Top Navigation Tabs:
+
+Weekly Plan (x5 weeks)
+
+Monthly Plan
+
+Quarterly Plan
+
+Yearly Plan
+
+Sections within each plan:
+
+Categories (Athletics, Academics, Faith, Personal, Custom).
+
+Task & goal slots.
+
+Progress indicators per category.
+
+Side Panel: “Suggestions by ALFRED” → Smart task breakdowns.
+
+Animations (GSAP + Framer Motion)
+
+Page Entry:
+
+Animated holographic blueprint grid fades in (Batcave mission board vibe).
+
+Switch Tabs (Week → Month → Quarter → Year):
+
+Content flips with card morph transition, cells fade in staggered.
+
+Adding a Goal:
+
+Expands from glowing cursor ripple → drops into slot with bounce.
+
+Progress Updates:
+
+Progress bar fills with liquid gradient animation.
+
+Hover on Task:
+
+Card enlarges slightly, subtle neon glow pulses.
+
+Features & Interactivity
+
+Multi-Domain Planning:
+
+Athletics: Pre-built selectors (cardio, calisthenics, exercise type, reps, sets).
+
+Islamic Studies: Quran, Hadith, Tafseer, Memorization. Surah selector auto-fills surah name when surah number chosen.
+
+Academics: Subjects, chapters, assignments, exams.
+
+Custom Domains: Add your own categories.
+
+Hierarchy:
+
+Goals → Tasks → Subtasks (all editable).
+
+Timeline Selector:
+
+Week 1–5, Month grid, Quarter Q1–Q4, Yearly milestones.
+
+Visualization:
+
+Animated charts (progress donuts, radar charts, 3D spider charts).
+
+Alfred Suggestions:
+
+“Based on your quarter goals, I suggest focusing on X this week.”
+
+Export/Sync:
+
+Push plan items directly into Calendar.
+
+Styling & Vibe
+
+Theme:
+
+Black glass panels with holographic outlines.
+
+Neon gradients (blue, violet, emerald).
+
+Fonts:
+
+Headings: Orbitron or Black Ops One.
+
+Body: Inter or Space Grotesk.
+
+Icons: Lucide icons with glowing outlines.
+
+3D Touch: Hover tilt + parallax on cards.
+
+Deliverables
+
+/plan page with weekly/monthly/quarterly/yearly tabs.
+
+Domain-specific selectors (athletics, Islamic, academics).
+
+Animated interactive cards with task/goal hierarchy.
+
+Integration with Calendar + ALFRED.
+
+GSAP transitions for smooth tab-switching + card interactions.
+
+Final Vibe
+
+The Planning Tab should feel like a Batcave tactical mission planner:
+
+Blueprint grid background, glowing cards, cinematic transitions.
+
+Goals aren’t just text — they’re mission objectives with animated indicators.
+
+Every action feels sleek, polished, and immersive.
+

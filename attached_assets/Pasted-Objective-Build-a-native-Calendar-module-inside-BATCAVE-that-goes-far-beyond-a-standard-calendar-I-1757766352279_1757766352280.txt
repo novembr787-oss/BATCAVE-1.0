@@ -1,0 +1,144 @@
+Objective:
+Build a native Calendar module inside BATCAVE that goes far beyond a standard calendar. It should feel like a Batcave mission-planning holo-table: fluid, animated, highly interactive, and deeply integrated with tasks, goals, and events.
+
+Layout & Structure
+
+Dedicated Calendar Page (/calendar) + accessible via Sidebar.
+
+Views:
+
+Month View → grid of days with tasks/events indicators.
+
+Week View → horizontal timeline with daily breakdown.
+
+Day View → hour-by-hour schedule with drag-and-drop tasks.
+
+Quick Add Bar → create task/event inline on any day.
+
+Hover Details → hover on a task/event shows preview card (title, tags, due time).
+
+Integration:
+
+Tasks auto-sync here.
+
+Goals show milestone markers.
+
+Events displayed as colored blocks with category tags.
+
+Animations (GSAP + Framer Motion)
+
+Page Entrance:
+
+Background glows in with subtle circular radar sweep animation.
+
+Calendar grid fades in cell by cell (staggered).
+
+Switch View (Month ↔ Week ↔ Day):
+
+Smooth morph animation (GSAP timeline scaling & sliding cells).
+
+Add Task/Event:
+
+Expands from a glowing cursor ripple, then slots into calendar with bounce easing.
+
+Drag-and-Drop:
+
+Ghost preview follows cursor, drops into slot with elastic animation.
+
+Event Hover:
+
+Detail card slides up softly with glowing border.
+
+Completed Task:
+
+Smooth fade + checkmark sweep animation on that day.
+
+Features & Interactivity
+
+Drag & Drop Scheduling:
+
+Move tasks between days/weeks.
+
+Color-Coded Categories:
+
+Academics, Athletics, Personal, Faith, etc.
+
+Filters:
+
+Toggle visibility of tasks/events by category or priority.
+
+Quarters Planning Mode:
+
+Special 4-section grid (Q1, Q2, Q3, Q4).
+
+High-level goals/events mapped here.
+
+Recurring Events:
+
+Simple repeat (daily, weekly, monthly).
+
+Smart Suggestions:
+
+ALFRED can suggest “best times” for study, workouts, etc.
+
+Styling & Vibe
+
+Theme: Futuristic holo-grid with Batcave colors: matte black background, glowing neon blue/purple highlights.
+
+Cards: Glassmorphism with subtle reflections.
+
+Fonts:
+
+Headers: Orbitron or Rajdhani.
+
+Body: Inter.
+
+Optional 3D:
+
+Hover tilt effect on day cells.
+
+Charts/weekly bars rendered with Recharts + Three.js for 3D depth.
+
+Backend Integration (Supabase)
+
+Schema:
+
+events: id, user_id, title, description, category, start_time, end_time, recurrence.
+
+tasks: (linked by due_date).
+
+API Calls:
+
+CRUD events.
+
+Sync with tasks/goals.
+
+Auth:
+
+Events tied to user_id (private).
+
+Deliverables
+
+/calendar page with animated views (month/week/day/quarter).
+
+Interactive drag-and-drop scheduling.
+
+Task/event CRUD with Supabase integration.
+
+Hover detail cards + filters.
+
+Smooth transitions via GSAP + Framer Motion.
+
+Alfred integration (optional: “Schedule this task” button pushes task into calendar automatically).
+
+Final Vibe
+
+This Calendar should not feel like Google Calendar. It should feel like:
+
+You’re Bruce Wayne staring at a mission holo-table.
+
+Days, weeks, months = grids of glowing mission slots.
+
+Every animation = sleek, cinematic, after-effects level polish.
+
+When you complete something, it should feel earned (like a batcomputer confirming a mission update).
